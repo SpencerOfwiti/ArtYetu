@@ -1,0 +1,12 @@
+//= require rails-ujs
+//= require activestorage
+//= require turbolinks
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+//= require metismenu/dist/metisMenu
+//= require jquery.slimscroll
+//= require datatables
+//= require bootstrap-datepicker/js/bootstrap-datepicker
+//= require bootstrap-timepicker/js/bootstrap-timepicker
+//= require_tree ./admin

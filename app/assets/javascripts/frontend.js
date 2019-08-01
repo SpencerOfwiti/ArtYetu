@@ -1,0 +1,16 @@
+//= require jquery3
+//= require popper
+//= require bootstrap
+//= require frontend/easing.min
+//= require frontend/hoverIntent
+//= require frontend/superfish.min
+//= require frontend/jquery.ajaxchimp.min
+//= require frontend/jquery.magnific-popup.min
+//= require frontend/owl.carousel.min
+//= require frontend/imagesloaded.pkgd.min
+//= require frontend/justified.min
+//= require frontend/jquery.sticky
+//= require frontend/jquery.nice-select.min
+//= require frontend/parallax.min
+//= require frontend/mail-script
+//= require frontend/main
