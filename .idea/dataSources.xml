@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="artyetu_development" uuid="0b6d819b-ad78-4e84-889b-b41119cb3989">
+    <data-source source="LOCAL" name="artyetu_development" uuid="b1cf610a-782f-411c-9669-ed1a289610e1">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="artyetu_test" uuid="6fe75c1b-acde-4222-9c51-126bc69ba644">
+    <data-source source="LOCAL" name="artyetu_test" uuid="ec96581c-eab9-491c-acf2-3f1bae4c2206">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>

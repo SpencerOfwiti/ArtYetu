@@ -1,0 +1,39 @@
+<div class="left-side-menu">
+
+  <div class="slimscroll-menu" id="left-side-menu-container">
+    <!--LOGO-->
+    <div class="menu-list">
+      <%= link_to '', class: 'logo text-center' do %>
+        <span class="logo-lg">
+          <%= image_tag 'admin/logo.png', alt: '', height: '16', id: 'side-main-logo' %>
+        </span>
+
+        <span class="logo-sm">
+          <%= image_tag 'admin/logo_sm.png', alt: '', height: '16' %>
+        </span>
+      <% end %>
+
+      <!--- Sidemenu -->
+      <ul class="metismenu side-nav">
+
+        <li class="side-nav-title side-nav-item">Navigation</li>
+
+        <li class="side-nav-item">
+          <a href="javascript: void(0);" class="side-nav-link">
+            <i class="dripicons-meter"></i>
+            <span class="badge badge-success float-right">3</span>
+            <span> Dashboards </span>
+          </a>
+        </li>
+
+        <li class="side-nav-item">
+          <%= link_to 'Upload Art', new_artist_upload_art_path , class: 'side-nav-link'%>
+
+        </li>
+        <li class="side-nav-item">
+         <%= link_to 'Portfolio', artist_upload_art_index_path, class: 'side-nav-link' %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

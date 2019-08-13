@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resource :dashboard, only: :index
+    resources :events
     root to: 'dashboard#index'
   end
 
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
 
   namespace :artist do
     resource :dashboard, only: :index
+    resources :upload_art
     root to: 'dashboard#index'
   end
 

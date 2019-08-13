@@ -1,0 +1,19 @@
+<div class="row">
+  <% @arts.each do |art| %>
+    <div class="col-md-6 col-lg-3">
+      <div class="card d-block">
+        <% if art.image.attached? %>
+          <image src="<%=(url_for(art.image)) %>" height="300px" width="300px" class="card-img-top"></image>
+        <% end %>
+        <div class="card-body">
+          <h5 class="card-title"><%= art.title %></h5>
+          <p class="card-text"><strong>Description: </strong><%= art.description %></p>
+          <p class="card-text"><Strong>Start Date:</Strong><%= art.date %></p>
+          <p class="card-text"><strong>Start Bid: </strong><%= art.start_bid %></p>
+          <%= link_to 'Show' ,artist_upload_art_path(art), class: 'btn btn-primary' %>
+          <%= link_to 'Edit', edit_artist_upload_art_path(art), class: 'btn btn-info' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
