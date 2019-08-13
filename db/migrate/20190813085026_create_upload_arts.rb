@@ -6,6 +6,7 @@ class CreateUploadArts < ActiveRecord::Migration[5.2]
       t.date :date
       t.numeric :start_bid
       t.string :image
+      t.references :artist
 
       t.timestamps
     end
