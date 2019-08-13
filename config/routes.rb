@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     resources :home, only: :index
     resources :about, only: :index
     resources :blogs, only: :index
-    resources :gallery, only: :index
+    resources :gallery
     resources :contact, only: :index
   end
 

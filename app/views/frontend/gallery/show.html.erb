@@ -1,0 +1,58 @@
+<section class="banner-area relative" id="home">
+  <div class="overlay overlay-bg"></div>
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="about-content col-lg-12">
+        <h1 class="text-white">
+          Art
+        </h1>
+        <p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="blog-home.html"> Bid</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-posts-area section-gap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 post-list blog-post-list">
+        <div class="single-post">
+          <%= image_tag @art.image, class: 'card-img-top', alt: 'Card image cap' %>
+          <a href="blog-single.html">
+            <h1>
+              <%= @art.title %>
+            </h1>
+          </a>
+          <p>
+            <%= @art.description %>
+          </p>
+          <div>
+            <%= @art.start_bid %>
+          </div>
+          <div class="bottom-meta">
+            <div class="user-details row align-items-center">
+              <div class="comment-wrap col-lg-6">
+                <ul>
+                  <li><%= @art.date %></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 sidebar">
+        <form class="form-area " id="myForm" action="https://colorlib.com/preview/theme/artmuseum/mail.php" method="post" class="contact-form text-right">
+          <div class="row">
+            <div class="col-lg-10 form-group">
+              <input name="name" placeholder="Enter your name" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = ''" onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text" data-cf-modified-db6e5799f8a384cf64cb9683-="">
+              <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = ''" onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email" data-cf-modified-db6e5799f8a384cf64cb9683-="">
+              <input name="subject" placeholder="Enter your bid" onfocus="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = ''" onblur="if (!window.__cfRLUnblockHandlers) return false; this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text" data-cf-modified-db6e5799f8a384cf64cb9683-="">
+              <div class="mt-20 alert-msg" style="text-align: left;"></div>
+              <button class="primary-btn mt-20 text-white" style="float: right;">Send Bid</button>
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</section>
