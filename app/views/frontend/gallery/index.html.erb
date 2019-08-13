@@ -23,22 +23,84 @@
       </div>
     </div>
     <div class="row">
-      <% @arts.each do |art| %>
-        <div class="col-lg-4 col-md-6 single-exhibition">
-          <div class="card d-block">
-            <% if art.image.attached? %>
-              <image src="<%=(url_for(art.image)) %>" height="300px" width="300px" class="card-img-top img-fluid"></image>
-            <% end %>
-            <div class="card-body">
-              <h5 class="card-title"><%= art.title %></h5>
-              <p class="card-text"><strong>Description: </strong><%= art.description %></p>
-              <p class="card-text date"><Strong>Start Date:</Strong><%= art.date %></p>
-              <p class="card-text"><strong>Start Bid: </strong><%= art.start_bid %></p>
-              <%= link_to 'Bid' ,gallery_path(art), class: 'btn btn-primary' %>
-            </div>
-          </div>
+      <div class="col-lg-4 col-md-6 single-exhibition">
+        <div class="thumb">
+          <%= image_tag 'frontend/pages/ex1.jpg', class: 'img-fluid' %>
         </div>
-      <% end %>
+        <p class="date">10 Jan 2018</p>
+        <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
+        <p>
+          Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+        </p>
+        <div class="meta-bottom d-flex justify-content-start">
+          <p class="price">$45.00</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 single-exhibition">
+        <div class="thumb">
+          <%= image_tag 'frontend/pages/ex2.jpg', class: 'img-fluid' %>
+        </div>
+        <p class="date">10 Jan 2018</p>
+        <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
+        <p>
+          Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+        </p>
+        <div class="meta-bottom d-flex justify-content-start">
+          <p class="price">$45.00</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 single-exhibition">
+        <div class="thumb">
+          <%= image_tag 'frontend/pages/ex3.jpg', class: 'img-fluid' %>
+        </div>
+        <p class="date">10 Jan 2018</p>
+        <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
+        <p>
+          Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+        </p>
+        <div class="meta-bottom d-flex justify-content-start">
+          <p class="price">$45.00</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 single-exhibition">
+        <div class="thumb">
+          <%= image_tag 'frontend/pages/ex4.jpg', class: 'img-fluid' %>
+        </div>
+        <p class="date">10 Jan 2018</p>
+        <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
+        <p>
+          Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+        </p>
+        <div class="meta-bottom d-flex justify-content-start">
+          <p class="price">$45.00</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 single-exhibition">
+        <div class="thumb">
+          <%= image_tag 'frontend/pages/ex5.jpg', class: 'img-fluid' %>
+        </div>
+        <p class="date">10 Jan 2018</p>
+        <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
+        <p>
+          Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+        </p>
+        <div class="meta-bottom d-flex justify-content-start">
+          <p class="price">$45.00</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 single-exhibition">
+        <div class="thumb">
+          <%= image_tag 'frontend/pages/ex6.jpg', class: 'img-fluid' %>
+        </div>
+        <p class="date">10 Jan 2018</p>
+        <a href="#"><h4>Blind Artist Draws Colorful Paintings</h4></a>
+        <p>
+          Lorem ipsum dolor sit amet, consec teturadip isicing elit, sed do eiusmod tempor.
+        </p>
+        <div class="meta-bottom d-flex justify-content-start">
+          <p class="price">$45.00</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
