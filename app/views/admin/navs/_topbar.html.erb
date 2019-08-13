@@ -40,8 +40,8 @@
         <span class="account-user-avatar">
         </span>
         <span>
-          <span class="account-user-name"></span>
-          <span class="account-position"></span>
+          <span class="account-user-name"><%= current_admin.full_name %></span>
+          <span class="account-position"><%= current_admin.user_role %></span>
         </span>
       </a>
       <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
@@ -68,10 +68,12 @@
           <span>Support</span>
         </a>
 
-        <a href="javascript:void(0);" class="dropdown-item notify-item">
+        <%= link_to destroy_admin_session_path, method: :delete, class: 'dropdown-item notify-item' do %>
           <i class="mdi mdi-logout mr-1"></i>
           <span>Logout</span>
-        </a>
+        <% end %>
+
+
       </div>
     </li>
 

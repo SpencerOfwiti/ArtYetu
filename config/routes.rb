@@ -3,11 +3,17 @@ Rails.application.routes.draw do
   namespace :admin do
     resource :dashboard, only: :index
     root to: 'dashboard#index'
+    resources :artists
+    resources :buyers
   end
 
   scope module: 'frontend' do
-    resources :home, only: :index
     root to: 'home#index'
+    resources :home, only: :index
+    resources :about, only: :index
+    resources :blogs, only: :index
+    resources :gallery, only: :index
+    resources :contact, only: :index
   end
 
   namespace :artist do

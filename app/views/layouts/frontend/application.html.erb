@@ -9,8 +9,15 @@
   <%= stylesheet_link_tag 'frontend', media: 'all'%>
 </head>
 <body>
+<header id="header" id="home">
+  <%= render partial: 'frontend/navs/top_bar' %>
+</header>
 
 <%= yield %>
+
+<footer class="footer-area section-gap">
+  <%= render partial: 'frontend/navs/footer' %>
+</footer>
 <%= javascript_include_tag 'frontend'%>
 </body>
 </html>

@@ -1,0 +1,43 @@
+<!-- start page title -->
+<div class="row">
+  <div class="col-12">
+    <div class="page-title-box">
+      <div class="page-title-right">
+        <ol class="breadcrumb m-0">
+          <li class="breadcrumb-item">
+            <%= link_to 'Dashboard' %>
+          </li>
+          <li class="breadcrumb-item active">Artist table</li>
+        </ol>
+      </div>
+      <h4 class="page-title"> Artist Table</h4>
+    </div>
+  </div>
+</div>
+<!-- end page title -->
+
+<!-- start appointments tables -->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="header-title">Artist DataTable</h4>
+        <br>
+        <div class="table-responsive">
+          <table id="artistDataTable" class="table table-striped dt-responsive  w-100" data-source="<%= admin_artists_path(format: :json) %>">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Artist First Name</th>
+              <th>Artist Last Name</th>
+              <th>Artist Email</th>
+              <th>Artist Phone Number</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
